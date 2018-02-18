@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/glavni_user"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.eventnis.UserActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:text="@string/hello_world"
+        android:textSize="30sp"
+        android:textColor="#ffcc00"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:id="@+id/kontejner_user"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1.35" >
+
+        <LinearLayout
+            android:id="@+id/post_box_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp" >
+
+            <Button
+                android:id="@+id/bttn_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bttn_post" />
+
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

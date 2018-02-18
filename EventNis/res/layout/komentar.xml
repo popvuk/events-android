@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@layout/komentar_border"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/korisnik_kom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/korisnik_kom"
+            android:textColor="#FF6600"
+            android:layout_weight="1.35"
+            android:textStyle="bold" />
+        
+         <TextView
+            android:id="@+id/datum_kom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/vreme_kom" />
+
+        <ImageView
+            android:id="@+id/delimg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/close"
+            android:visibility="invisible" />
+    </LinearLayout>
+    
+   
+
+    <TextView
+        android:id="@+id/text_kom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tekst_kom"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        android:textColor="#B30086" />
+
+
+
+</LinearLayout>

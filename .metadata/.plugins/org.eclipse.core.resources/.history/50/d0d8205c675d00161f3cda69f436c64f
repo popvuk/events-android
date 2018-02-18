@@ -1,0 +1,36 @@
+package com.example.vchat;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+
+public class RegisterActivity extends AppCompatActivity{
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		this.setContentView(R.layout.activity_register);
+		
+		final EditText name = (EditText) findViewById(R.id.username);
+		final EditText phone = (EditText) this.findViewById(R.id.number);
+		Button reg = (Button) this.findViewById(R.id.bttn_reg);
+		reg.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				String username = name.getText().toString();
+				String number = phone.getText().toString();
+				
+				Firebase fire = new Firebase("https://vchat-1376.firebaseio.com/");
+			}
+		});
+	}
+	
+	
+	
+
+}

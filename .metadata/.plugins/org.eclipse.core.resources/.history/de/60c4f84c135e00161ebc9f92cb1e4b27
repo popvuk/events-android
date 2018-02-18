@@ -1,0 +1,76 @@
+package com.example.tasks;
+
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import com.example.custom.MyConnections;
+import com.example.eventnis.R;
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.model.LatLng;
+
+import android.content.Context;
+import android.os.AsyncTask;
+
+
+public class GoogleMapTask extends AsyncTask<Void,Void,JSONObject>{
+
+	String adresa;
+	GoogleMap mapa;
+	Context ctx;
+	MyConnections mycon;
+	
+	public GoogleMapTask(String adr, GoogleMap gm, Context con)
+	{
+		//this.adresa = adr.replaceAll(" ", "%20");
+		this.adresa =adr;
+		this.mapa = gm;
+		this.ctx = con;
+		this.mycon = new MyConnections(this.ctx);
+	}
+	@Override
+	protected JSONObject doInBackground(Void... params) {
+		String key = this.ctx.getString(R.string.google_map_kljuc);
+		String kljuc = "&sensor=false&key="+key;
+		String googlemap = this.ctx.getString(R.string.google_map_url);
+		String url = googlemap+adresa+kljuc;
+		JSONObject json=null;
+		try 
+		{
+			String jsonText = this.mycon.getJson(url);
+            json = new JSONObject(jsonText); 
+		} 
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+        return json;
+	}
+	
+	@Override
+	protected void onPostExecute(JSONObject result)
+	{	
+		double lng=0, lat=0;
+		try 
+		{
+            JSONArray array1 = result.getJSONArray("results");
+            JSONObject obj1 = (JSONObject) array1.getJSONObject(0);
+            JSONObject obj2 = (JSONObject) obj1.getJSONObject("geometry");
+            JSONObject obj3 = (JSONObject) obj2.getJSONObject("location");
+			lat = Double.parseDouble(obj3.get("lat").toString());
+			lng = Double.parseDouble(obj3.get("lng").toString());
+		} 
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+		
+		LatLng latlng = new LatLng(lat,lng);
+        CameraUpdate center = CameraUpdateFactory.newLatLngZoom(latlng,17);
+		
+		mapa.moveCamera(center);
+	}
+
+}

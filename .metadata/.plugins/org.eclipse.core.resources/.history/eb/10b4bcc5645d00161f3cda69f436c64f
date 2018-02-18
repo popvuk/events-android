@@ -1,0 +1,21 @@
+package com.example.vchat;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.EditText;
+
+public class RegisterActivity extends AppCompatActivity{
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		this.setContentView(R.layout.activity_register);
+		
+		EditText name =(EditText) this.findViewById(R.id.username);
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EventNiš</string>
+    <string name="hello_world">EventNis</string>
+    <string name="action_settings">Settings</string>
+    <string name="datum">dd.mm.yyyy</string>
+    <string name="kategorija">Kategorija:</string>
+    <string name="tekst_posta">Naslov posta:</string>
+    <string name="drugi_aktiviti">Post</string>
+    <string name="dat_odr">Datum održavanja:</string>
+    <string name="lokacija">Lokacija:</string>
+    <string name="bttn_kom">Dodaj komentar</string>
+    <string name="tekst">Tekst posta:</string>
+    <string name="kom">Komentari</string>
+    <string name="korisnik_kom">korisnik</string>
+    <string name="vreme_kom">dd.mm.yyyy hh:mm</string>
+    <string name="tekst_kom">Tekst komentara</string>
+    <string name="registracija">Registracija</string>
+    <string name="korime">Korisničko ime:</string>
+    <string name="pass">Šifra:</string>
+    <string name="name">Ime:</string>
+    <string name="lastname">Prezime:</string>
+    <string name="email">Email:</string>
+    <string name="treci_aktiviti">Registracija</string>
+    <string name="reg_bttn">Registruj se</string>
+    <string name="cetvrti_aktiviti">Kontakt</string>
+    <string name="contact_bttn">Kontaktirajte nas</string>
+    <string name="contact_adr">Adresa: Cara Dušana 35, 17500 Vranje</string>
+    <string name="contact_tel">Telefon: 017-020-5520</string>
+    <string name="contact_fax">Fax: 017-080-4480</string>
+    <string name="login">Login</string>
+    <string name="log_log">Loguj se</string>
+    <string name="log_dis">Otkaži</string>
+    <string name="bttn_postavi">Postavi</string>
+    <string name="bttn_post">Postavi obaveštenje</string>
+    <string name="sesti_aktiviti">Dodaj post</string>
+    <string-array name="kategorije">
+        <item >Pozorište</item>
+        <item >Bioskop</item>
+        <item >Koncerti</item>
+    </string-array>
+    <string name="blanko">Odaberi kategoriju</string>
+    <string name="dat_poc">Datum početka:</string>
+    <string name="dat_zav">Datum završetka:</string>
+    <string name="vreme_odrzavanja">Vreme:</string>
+    <string name="slika">Slika:</string>
+    <string name="select">Dodaj sliku</string>
+    <string name="datum_format">dd.mm.yyyy</string>
+    <string name="vreme_format">hh:mm</string>
+    <string name="sedmi_aktiviti">U gradu...</string>
+    <string name="bttn_next">Sledeća &gt;&gt;</string>
+    <string name="bttn_prev"> &lt;&lt; Prethodna</string>
+    <string name="strana">1</string>
+    <string name="kontakt">Event Niš kontakt</string>
+    <string name="empty">Prazno polje</string>
+    <string name="log_success">Uspešno ste logovani</string>
+    <string name="logout">Uspešno ste izlogovani</string>
+    <string name="log_failed">Neuspešno logovanje</string>
+    <string name="empty_user">Unesite korisničko ime</string>
+    <string name="empty_pass">Unesite šifru</string>
+    <string name="progress">In Progress...</string>
+    <string name="alert">Upozorenje</string>
+    <string name="del_kom">Izbriši ovaj komentar?</string>
+    <string name="del_post">Izbriši ovaj post?</string>
+    <string name="invalid_email">Email adresa nije validna</string>
+    <string name="filenotfound">Fajl nije pronadjen</string>
+    <string-array name="menu">
+        <item >Početna</item>
+        <item >Loguj se</item>
+        <item >Kategorije</item>
+        <item >Registracija</item>
+        <item >Kontakt</item>
+        <item >U gradu...</item>
+        <item >Bioskop Vilin Grad</item>
+        <item >Bioskop Kupina</item>
+        <item >Narodno pozorište-Niš</item>
+        <item >Izloguj se</item>
+    </string-array>
+    <string name="token">EAAOR6XZB2y0YBAHLylgzbyDjfHwliZAmkWeTgOy8JLi4Uv0W4sZBGP00GqpaYMqfxDBK3eHzsNe7KkXz5iTBZCBkN37th6ABZB3vZBP3tTMNIchugDBGmasFZBZABYQ3A3Vy2oiYil1ZBMZCmxorVLBiX7ZA6zNaqT8LZCoZD</string>    
+    <string name="facebook_app_id">1004856986225478</string>
+    <string name="google_map_kljuc">AIzaSyA5a9YSBImBV689HXpaJT6Yzc_6gO54X84</string>
+    <string name="google_map_url">https://maps.googleapis.com/maps/api/geocode/json?address=</string>
+    <string name="url_post_komentar">http://vukasin.null.rs/application/rest/setcomment</string>
+    <string name="url_delete_komentar">http://vukasin.null.rs/application/rest/deleteKomentar</string>
+    <string name="url_delete_post">http://vukasin.null.rs/application/rest/deletePost</string>
+    <string name="url_registracija">http://vukasin.null.rs/application/rest/registracija</string>
+    <string name="url_vrati_korisnika">http://vukasin.null.rs/application/rest/getKorisnik</string>
+    <string name="url_postovi_kategorija">http://vukasin.null.rs/application/rest/kategorije</string>
+    <string name="url_postovi">http://vukasin.null.rs/application/rest/index</string>
+    <string name="url_get_komentari">http://vukasin.null.rs/application/rest/komentari</string>
+    <string name="url_post_korisnik">http://vukasin.null.rs/application/rest/korisnik</string>
+    <string name="url_image">http://vukasin.null.rs/application/rest/image</string>
+    <string name="url_kontakt">http://vukasin.null.rs/application/rest/getmail</string>
+    <string name="url_login">http://vukasin.null.rs/application/rest/login</string>
+    <string name="url_post">http://vukasin.null.rs/application/rest/post</string>
+    <string name="url_kategorije">http://vukasin.null.rs/application/rest/getKategorije</string>
+    <string name="http_coockie">__test=3a5ce51923b28016c1691d929231cd1f</string>
+    
+</resources>

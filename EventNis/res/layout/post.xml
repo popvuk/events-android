@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_marginBottom="10dp"
+    android:background="@layout/border"
+    android:id="@+id/postId">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/datum_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/datum"
+            android:textSize="17sp" 
+            android:textColor="#FFCC00"/>
+
+        <TextView
+            android:id="@+id/kategorija_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/kategorija"
+            android:textSize="22sp"
+            android:textColor="#FF850B"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/imageMeni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            android:visibility="gone" />
+        
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/img_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="0.68"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:layout_gravity="center_horizontal"/>
+   
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:gravity="center" >
+        
+        <TextView
+            android:id="@+id/naslov_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:clickable="true"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="@string/tekst_posta"  />
+        
+    </LinearLayout>
+
+</LinearLayout>
